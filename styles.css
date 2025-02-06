@@ -21,27 +21,47 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-weight: 700;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+}
+
+.btn-header {
+    background-color: #ee9b00;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Hero-Bereich */
@@ -53,6 +73,7 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
 .hero-content h2 {
@@ -90,29 +111,57 @@ h2 {
     color: #005f73;
 }
 
+/* Über mich */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.about-image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-content img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Leistungen */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Kontaktformular */
 form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-}
-
-form label {
-    text-align: left;
-    margin-top: 10px;
+    gap: 10px;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 form button {
-    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -123,4 +172,32 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
+}
+
+/* Beispieltexte eingefügt */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-content img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Beispielbild eingefügt */
+.about-image img {
+    content: url('/mnt/data/A_professional_and_warm_therapist_sitting_in_a_coz.png');
 }
