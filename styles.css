@@ -1,6 +1,6 @@
 /* Allgemeine Stile */
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,12 +12,11 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 /* Header */
 header {
-    background-color: #005f73;
+    background-color: #5a7d7c;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,11 +30,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-}
-
-.logo {
-    height: 60px;
+    width: 90%;
+    margin: auto;
 }
 
 nav ul {
@@ -55,30 +51,19 @@ nav ul li a {
     font-weight: 500;
 }
 
-.btn-header {
-    background-color: #ee9b00;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* Hero-Bereich */
 #hero {
-    background: url('https://source.unsplash.com/1600x900/?couple,therapy') center/cover no-repeat;
+    background: url('https://source.unsplash.com/1600x900/?therapy,couple') center/cover no-repeat;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 20px;
 }
 
 .hero-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
 .hero-content p {
@@ -92,7 +77,6 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 15px;
     font-weight: bold;
 }
 
@@ -108,7 +92,7 @@ section {
 
 h2 {
     font-size: 2rem;
-    color: #005f73;
+    color: #5a7d7c;
 }
 
 /* Über mich */
@@ -125,17 +109,11 @@ h2 {
     border-radius: 50%;
 }
 
-.about-content img {
-    width: 250px;
-    border-radius: 10px;
-}
-
 /* Leistungen */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    text-align: center;
 }
 
 .service-box {
@@ -163,41 +141,17 @@ form input, form textarea {
 
 form button {
     cursor: pointer;
+    background-color: #5a7d7c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Footer */
 footer {
-    background-color: #005f73;
+    background-color: #5a7d7c;
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 30px;
-}
-
-/* Beispieltexte eingefügt */
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-text {
-    max-width: 600px;
-    text-align: left;
-}
-
-.about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.about-content img {
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-/* Beispielbild eingefügt */
-.about-image img {
-    content: url('/mnt/data/A_professional_and_warm_therapist_sitting_in_a_coz.png');
 }
