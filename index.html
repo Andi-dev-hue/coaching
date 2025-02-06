@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paarberatung</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Paarberatung</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#services">Leistungen</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="#booking">Termin buchen</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Paarberatung</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Über mich</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#booking">Termin buchen</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <section id="about" class="fade-in">
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Gemeinsam Lösungen finden</h2>
+            <p>Professionelle Unterstützung für Ihre Beziehung.</p>
+            <a href="#booking" class="btn">Jetzt Termin vereinbaren</a>
+        </div>
+    </section>
+    
+    <section id="about" class="fade-in container">
         <h2>Über mich</h2>
         <p>Erfahren Sie mehr über meine Arbeit und meine Philosophie.</p>
     </section>
     
-    <section id="services" class="fade-in">
+    <section id="services" class="fade-in container">
         <h2>Leistungen</h2>
         <p>Ich biete professionelle Paarberatung für verschiedenste Anliegen.</p>
     </section>
     
-    <section id="contact" class="fade-in">
+    <section id="contact" class="fade-in container">
         <h2>Kontakt</h2>
         <form id="contactForm">
             <label for="name">Name:</label>
@@ -41,12 +54,12 @@
             <label for="message">Nachricht:</label>
             <textarea id="message" name="message" required></textarea>
             
-            <button type="submit">Senden</button>
+            <button type="submit" class="btn">Senden</button>
         </form>
         <p id="formMessage"></p>
     </section>
     
-    <section id="booking" class="fade-in">
+    <section id="booking" class="fade-in container">
         <h2>Termin buchen</h2>
         <form id="bookingForm">
             <label for="date">Datum:</label>
@@ -61,11 +74,15 @@
             <label for="emailBooking">E-Mail:</label>
             <input type="email" id="emailBooking" name="emailBooking" required>
             
-            <button type="submit">Termin buchen</button>
+            <button type="submit" class="btn">Termin buchen</button>
         </form>
         <p id="bookingMessage"></p>
-        <div id="confirmationMessage" style="display: none; color: green; font-weight: bold;">Ihr Termin wurde erfolgreich gebucht!</div>
+        <div id="confirmationMessage" class="confirmation-message">Ihr Termin wurde erfolgreich gebucht!</div>
     </section>
+    
+    <footer>
+        <p>&copy; 2025 Paarberatung – Alle Rechte vorbehalten.</p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
